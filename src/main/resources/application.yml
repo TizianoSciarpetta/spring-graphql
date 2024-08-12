@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-graphql
+  datasource:
+    url: jdbc:h2:mem:test-db
+    username: username
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+  graphql:
+    graphiql:
+      enabled: true
+  h2:
+    console:
+      enabled: true
+      path: /console/
